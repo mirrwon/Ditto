@@ -1,0 +1,180 @@
+============================================================
+  LoRA (Gemma-2-9B-IT) 다마고치 대사 모델 설치/서빙 가이드
+============================================================
+
+[ 개요 ]
+- 용도: 식물 다마고치 대사(JSON) 생성 서버
+- 모델: google/gemma-2-9b-it + LoRA adapter
+- 실행 위치: EC2 GPU 인스턴스
+- 호출 위치: 로컬/운영 백엔드가 HTTP API로 호출
+
+
+============================================================
+1. 준비 파일
+============================================================
+
+(1) Git에 올리는 파일(서빙 코드)
+- serve_lora.py
+- requirements-lora.txt
+
+(2) Git에 올리지 않는 파일(대용량/민감)
+- lora_gemma2_v3_unsloth_final.tar.gz (약 199MB)
+- full_dataset_training.jsonl (학습 데이터)
+- HF_TOKEN, .env
+
+(3) LoRA 압축 파일 내용
+- final_adapter/
+- train_meta.json
+
+
+============================================================
+2. LoRA 압축 해제
+============================================================
+
+EC2에서:
+
+  cd /home/ubuntu/artifacts
+  tar -xzf lora_gemma2_v3_unsloth_final.tar.gz
+
+주의:
+- 현재 압축은 바로 final_adapter/가 생성되는 구조입니다.
+- adapter 경로 예시: /home/ubuntu/artifacts/final_adapter
+
+
+============================================================
+3. EC2 런타임 설치
+============================================================
+
+DLAMI 기준:
+
+  source /opt/pytorch/bin/activate
+  cd ~/gemma_train
+  pip install -r requirements-lora.txt
+
+requirements-lora.txt 핵심 패키지:
+- torch
+- transformers (4.x)
+- peft
+- accelerate
+- bitsandbytes
+- fastapi
+- uvicorn[standard]
+- pydantic
+- sentencepiece
+
+
+============================================================
+4. LoRA 서버 실행
+============================================================
+
+  source /opt/pytorch/bin/activate
+  cd ~/gemma_train
+  pkill -f "python .*serve_lora.py" || true
+  python serve_lora.py \
+    --base_model google/gemma-2-9b-it \
+    --adapter_dir /home/ubuntu/artifacts/final_adapter \
+    --host 0.0.0.0 \
+    --port 8000
+
+정상 기준:
+- "Uvicorn running on http://0.0.0.0:8000" 출력
+- 헬스체크:
+
+  curl http://127.0.0.1:8000/health
+  -> {"ok": true}
+
+
+============================================================
+5. 백엔드(.env) 설정
+============================================================
+
+backend/.env:
+
+  LORA_SERVER_URL=http://<EC2_PUBLIC_IP>:8000
+  LORA_TIMEOUT_SEC=120
+  LORA_MAX_NEW_TOKENS=64
+  LORA_TEMPERATURE=0.0
+  LORA_TOP_P=0.9
+
+권장:
+- 느리면 LORA_TIMEOUT_SEC=180까지 확장
+- JSON 잘림이 있으면 LORA_MAX_NEW_TOKENS=96로 상향
+
+주의:
+- EC2 stop/start 시 퍼블릭 IP 변경 가능
+- 운영은 Elastic IP 또는 내부망+프록시 권장
+
+
+============================================================
+6. API 테스트
+============================================================
+
+EC2 내부 테스트:
+
+  curl -X POST http://127.0.0.1:8000/generate \
+    -H "Content-Type: application/json" \
+    -d '{
+      "system_prompt": "You generate Korean Tamagotchi-style plant dialogue. Output MUST be a single JSON object only.",
+      "user_payload": {
+        "plant": {"id":"p1","name":"테스트","soul":"강철이"},
+        "season":"summer",
+        "triggers":[{"id":"MIST_DONE_OK"}]
+      },
+      "max_new_tokens": 64,
+      "temperature": 0.0,
+      "top_p": 0.9
+    }'
+
+응답 스키마:
+
+  {
+    "text": "...",
+    "emote": "HAPPY|NEEDY|ANNOYED|SASSY|WORRIED|CALM|PROUD|MAGICAL",
+    "animation": "idle|bounce|shake|wiggle|float|sparkle|droop|pout|wave|nod",
+    "tags": ["..."]
+  }
+
+
+============================================================
+7. 학습 정보(기록용)
+============================================================
+
+- 학습 데이터: 63,061 샘플
+- base_model: google/gemma-2-9b-it
+- max_seq_len: 2048
+- batch_size: 1
+- grad_accum: 16
+- lr: 1e-4
+- max_steps: 3000
+
+참고:
+- 학습 재실행 시에만 train_lora.py + dataset 필요
+- 서빙만 할 때는 불필요
+
+
+============================================================
+8. 트러블슈팅
+============================================================
+
+Q1) /api/tamagotchi/state 가 503
+A1) 대부분 LoRA upstream 실패입니다.
+    - LoRA /health 확인
+    - 백엔드 .env 반영됐는지 확인(재시작 필수)
+    - timeout 값 상향
+
+Q2) LoRA /generate 가 422
+A2) 보통 출력 스키마 불일치/JSON 깨짐입니다.
+    - 최신 serve_lora.py 사용
+    - max_new_tokens 상향
+
+Q3) WinError 10060 (연결 timeout)
+A3) 네트워크/보안그룹 문제입니다.
+    - EC2 인바운드 TCP 8000
+    - IP/URL 정확성
+    - 필요 시 SSH 터널 사용
+
+Q4) 응답이 느림(20~40초)
+A4) 9B 모델 특성입니다.
+    - 토큰 줄이기(64 근처)
+    - 프론트 즉시 피드백(로딩/후갱신) 적용
+

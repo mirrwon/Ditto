@@ -1,0 +1,22 @@
+{
+  "model_name": "google/gemma-2-9b-it",
+  "train_file": "/home/ubuntu/gemma_train/full_dataset_training.jsonl",
+  "num_samples_after_preprocess": 39291,
+  "max_seq_len": 2048,
+  "batch_size": 1,
+  "grad_accum": 16,
+  "lr": 0.0001,
+  "max_steps": 3000,
+  "save_steps": 100,
+  "packing": true,
+  "packing_drop_last": false,
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ]
+}
