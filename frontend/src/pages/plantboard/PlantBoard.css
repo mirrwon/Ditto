@@ -1,0 +1,486 @@
+:root {
+  --p-primary: #3E403B;
+  /* Dark Olive Grey */
+  --p-accent: #8C9388;
+  /* Muted Sage Grey */
+  --p-bg: #FAFAF8;
+  /* Warm Paper White */
+  --p-glass: rgba(255, 255, 255, 0.9);
+  --p-glass-border: rgba(0, 0, 0, 0.05);
+  --p-text: #3E403B;
+  --p-text-muted: #8C9388;
+  --p-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.03);
+
+  --sidebar-active: #E8E8E6;
+  --sidebar-bg: #8C9388;
+}
+
+.plantboard-container {
+  display: flex;
+  gap: 20px;
+  background-color: var(--p-bg);
+  padding: 20px;
+  height: 1000px;
+  max-width: 1200px;
+  /* 적용 위치 수정 */
+  margin: 0 auto;
+  min-height: 1000px;
+  box-sizing: border-box;
+  font-family: var(--font-body);
+  overflow: hidden;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+}
+
+.plantboard-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.sidebar-compact-tab {
+  background-color: var(--p-primary);
+  color: white;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid var(--p-primary);
+}
+
+.sidebar-compact-tab:hover {
+  background-color: var(--p-accent);
+}
+
+.sidebar-compact-tab.active {
+  background-color: var(--sidebar-active);
+  color: var(--p-primary);
+  border-color: var(--p-primary);
+}
+
+.sidebar-section {
+  flex: 1;
+  display: flex;
+  background: rgba(255, 255, 255, 0.795);
+  border: 1px solid var(--p-primary);
+  /* Brown border */
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 0;
+}
+
+.sidebar-section--tamagotchi {
+  flex: 0.7;
+}
+
+.sidebar-section--diary {
+  flex: 1.3;
+  position: relative;
+}
+
+.sidebar-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-section.active {
+  border-color: var(--p-accent);
+  /* Same as header brown */
+  background-color: var(--sidebar-active);
+}
+
+.sidebar-label {
+  background-color: var(--p-primary);
+  color: #fff;
+  width: 30px;
+  padding: 10px 5px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+
+.sidebar-content {
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 10px;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-section--tamagotchi .sidebar-content {
+  padding: 20px 20px;
+}
+
+.sidebar-section--tamagotchi .placeholder-box {
+  padding: 0;
+  gap: 0;
+}
+
+.sidebar-content.diary-preview {
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+/* removed NEW badge */
+
+.placeholder-box,
+.mini-box {
+  border: none;
+  color: #ccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.plantboard-main {
+  flex-grow: 1;
+  background: white;
+  border: 1px solid var(--p-primary);
+  border-radius: 4px;
+  padding: 0;
+  /* Let TimeLogPage handle padding */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.plantboard-view-header {
+  padding: 16px 20px 12px;
+  border-bottom: 1px solid #e6e1d8;
+  background: var(--p-primary);
+}
+
+.plantboard-view-title {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.tamagotchi-view-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  color: #8d6e63;
+  padding-top: 6px;
+}
+
+.tamagotchi-placeholder {
+  height: 100%;
+}
+
+.tamagotchi-room-img {
+  width: 96%;
+  height: 96%;
+  max-width: 96%;
+  max-height: 96%;
+  object-fit: contain;
+  image-rendering: auto;
+  filter: brightness(0.95) saturate(0.8) blur(0.5px);
+  opacity: 1;
+  border: none;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+.sidebar-section--tamagotchi .tamagotchi-room-img {
+  width: 75%;
+  height: 75%;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  box-sizing: border-box;
+  transition: filter 0.1s ease;
+  filter: none;
+}
+
+.sidebar-section--tamagotchi:hover .tamagotchi-room-img {
+  filter: blur(0.5px);
+}
+
+.sidebar-section--tamagotchi.is-disabled {
+  opacity: 0.5;
+  filter: grayscale(0.2);
+  cursor: not-allowed;
+}
+
+
+.tamagotchi-placeholder-text {
+  margin: 8px 0 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #000000;
+  letter-spacing: 0.02em;
+}
+
+.tamagotchi-room {
+  position: relative;
+  width: 95%;
+  max-width: 700px;
+  aspect-ratio: 4 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4px;
+  background: #101010;
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04),
+              0 10px 26px rgba(0, 0, 0, 0.18);
+}
+
+.tamagotchi-character {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  transform: translate(-50%, -50%);
+  transition: left 2.6s ease, top 2.6s ease, transform 0.25s ease;
+  image-rendering: auto;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
+  overflow: visible;
+}
+
+.tamagotchi-character__base {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  image-rendering: auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.tamagotchi-character__emote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: auto;
+  image-rendering: auto;
+  z-index: 2;
+  pointer-events: none;
+  animation: emoteFloat 0.95s ease-in-out infinite,
+             emoteWiggle 0.45s ease-in-out infinite,
+             emoteBlink 1.1s steps(1, end) infinite;
+}
+
+.tamagotchi-character.is-jump {
+  transform: translate(-50%, -50%) translateY(-10px);
+}
+
+/* Tamagotchi UI Panel (mock LLM output) */
+.tamagotchi-panel {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.tamagotchi-bubble {
+  background: #fffdf4;
+  border: 2px solid #2c2c2c;
+  border-radius: 14px;
+  padding: 12px 14px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #000000;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: left 2.6s ease, top 2.6s ease;
+}
+
+.tamagotchi-bubble::before {
+  content: "";
+  position: absolute;
+  left: 36px;
+  bottom: -26px;
+  width: 0;
+  height: 0;
+  border: 16px solid transparent;
+  border-top-color: #2c2c2c;
+}
+
+.tamagotchi-bubble::after {
+  content: "";
+  position: absolute;
+  left: 38px;
+  bottom: -20px;
+  width: 0;
+  height: 0;
+  border: 13px solid transparent;
+  border-top-color: #fffdf4;
+}
+
+.tamagotchi-bubble--room {
+  position: absolute;
+  max-width: 60%;
+  z-index: 2;
+}
+
+.tamagotchi-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tama-pill {
+  font-size: 12px;
+  background: #f1efe9;
+  border: 1px solid #c9c4b8;
+  color: #3e403b;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+.tamagotchi-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tama-tag {
+  font-size: 11px;
+  padding: 3px 6px;
+  border-radius: 6px;
+  background: #f6f6f6;
+  border: 1px dashed #bdbdbd;
+  color: #5a5a5a;
+}
+
+/* Animations */
+.tamagotchi-character.anim-idle {
+  animation: breathe 3s ease-in-out infinite;
+}
+
+.tamagotchi-character.anim-bounce {
+  animation: bounce 0.9s ease-in-out infinite;
+}
+
+.tamagotchi-character.anim-droop {
+  animation: droop 1.6s ease-in-out infinite;
+}
+
+.tamagotchi-character.anim-shake {
+  animation: shake 0.6s ease-in-out infinite;
+}
+
+.tamagotchi-character.anim-nod {
+  animation: nod 1.2s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-4px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-12px);
+  }
+}
+
+@keyframes droop {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateX(0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translateX(-4px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translateX(4px);
+  }
+}
+
+@keyframes nod {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(6px);
+  }
+}
+
+@keyframes emoteFloat {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-6px);
+  }
+}
+
+@keyframes emoteWiggle {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(-6deg);
+  }
+}
+
+@keyframes emoteBlink {
+  0%,
+  72% {
+    opacity: 1;
+  }
+  73%,
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.diary-placeholder {
+  height: 400px;
+}

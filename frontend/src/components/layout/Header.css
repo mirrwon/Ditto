@@ -1,0 +1,154 @@
+/* =========================
+   Header (Ditto style)
+   ========================= */
+
+.header {
+  width: 100%;
+  padding: 20px 0 16px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+
+/* ===== 상단: 로고 + login ===== */
+.header-top {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 0;
+  gap: 24px;
+  padding-left: 25px;
+  margin-top: 8px;
+}
+
+/* 로고 중앙 크게 */
+.header-logo {
+  font-size: 44px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+
+/* login / logout 오른쪽 */
+.header-auth {
+  position: static;
+  background: transparent;
+  border: none;
+  font: inherit;
+  color: var(--c-text);
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0;
+  border-radius: 0;
+  transition: all 0.2s ease;
+}
+
+.header-auth:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+/* ===== 하단: 메뉴 ===== */
+.header-nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0;
+  border-top: none;
+  border-bottom: none;
+  position: static;
+  margin-left: auto;
+  margin-top: 8px;
+}
+
+.header--home .header-top {
+  justify-content: center;
+  padding-left: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.header--home .header-nav {
+  margin-left: 0;
+  margin-top: 10;
+}
+
+.header--home .header-auth {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* home 이외: login/logout 앞 구분선 */
+.header--default .header-link.header-auth {
+  margin-left: 0;
+  padding-left: 24px;
+  border-left: 2px solid rgba(0, 0, 0, 0.308);
+}
+
+/* 메뉴 링크 */
+.header-link {
+  background: transparent;
+  border: none;
+  padding: 2px 2px;
+  font: inherit;
+  color: var(--c-text);
+  cursor: pointer;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  position: relative;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  opacity: 1;
+}
+
+.header-link:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.header-link[aria-disabled="true"] {
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 0.45;
+  cursor: default;
+}
+
+.header-link[aria-disabled="true"]:hover {
+  opacity: 0.45;
+}
+
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.loading-spinner {
+  width: 22px;
+  height: 22px;
+  border: 4px solid #ddd;
+  border-top-color: #666;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

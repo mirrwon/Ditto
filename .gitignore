@@ -1,0 +1,22 @@
+.idea/
+.env
+.env.*
+*.key
+*.secret
+__pycache__/
+*.pyc
+backend/app/models/sam_vit_b.pth
+backend/results/
+backend/results/*.json
+backend/results/*.jpg
+backend/results/*.png
+backend/results/result_latest.json
+backend/uploads/*.jpg
+backend/uploads/*.png
+# runtime artifacts
+backend/surveys/
+
+# large model / training files
+backend/lora_gemma2_v3_unsloth_final.tar.gz
+backend/full_dataset_training.jsonl
+*.tar.gz

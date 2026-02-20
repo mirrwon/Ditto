@@ -1,0 +1,234 @@
+/* =========================
+   MyinfoEdit (Page Layout Only)
+   - l-cover / l-cover-center 재사용
+   - ui-input / ui-btn는 components.css 재사용
+   - Myinfo.css와 동일한 "센터 정렬 + 큰 사진 + 깔끔" 톤
+   ========================= */
+
+/* 제목 */
+.myinfoedit-title {
+  font-size: var(--fs-4);
+  margin: 0 0 var(--s-2);
+  text-align: center;
+}
+
+/* 제목 아래 라인 */
+.myinfoedit-divider {
+  width: 160px;
+  margin: 0 auto var(--s-5);
+}
+
+/* 폼 래퍼 */
+.myinfoedit-form {
+  width: 100%;
+}
+
+/* 섹션(폼 덩어리) */
+.myinfoedit-section {
+  text-align: center;
+  margin-bottom: var(--s-6);
+}
+
+.myinfoedit-label {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 6px;
+  font-size: var(--fs-1);
+  font-weight: 600;
+  color: var(--c-text);
+  text-align: left;
+}
+
+/* =========================
+   Profile (Myinfo.css와 동일한 느낌)
+   ========================= */
+
+.myinfoedit-photoRow {
+  display: grid;
+  justify-items: center;
+  gap: var(--s-3);
+}
+
+/* 사진 박스: Myinfo의 250px 톤 */
+.myinfoedit-photoBox {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto var(--s-2);
+  overflow: hidden;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myinfoedit-photoImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.myinfoedit-photoEmpty {
+  font-size: var(--fs-2);
+  color: var(--c-muted);
+}
+
+/* input[type=file] 숨김 */
+.myinfoedit-fileInput {
+  display: none;
+}
+
+/* 파일 버튼: ui-btn 모양 그대로 쓰고, 여기선 크기만 */
+.myinfoedit-fileBtn {
+  width: 140px;
+  height: 38px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 파일명 */
+.myinfoedit-fileName {
+  margin: 0;
+  font-size: var(--fs-1);
+  color: var(--c-muted);
+}
+
+/* =========================
+   Inputs (배치/폭만 제어)
+   ========================= */
+
+.myinfoedit-section .ui-input {
+  width: 100%;
+  max-width: 500px; /* Myinfo.css 텍스트 폭 느낌 */
+  margin: 0 auto var(--s-3);
+  display: block;
+  border: 1px solid rgba(43, 61, 26, 0.2);
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+}
+
+.myinfoedit-readonly {
+  opacity: 0.75; /* 살짝 비활성 느낌 */
+}
+
+/* 도움말 */
+.myinfoedit-help {
+  margin: calc(var(--s-3) * -1 + 2px) auto var(--s-3);
+  max-width: 320px;
+  text-align: left;
+  font-size: var(--fs-1);
+  color: var(--c-muted);
+}
+
+/* =========================
+   Address row
+   ========================= */
+
+.address-row {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto var(--s-3);
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--s-2);
+  align-items: center;
+}
+
+/* address-row 안에서 input/button margin 제거 */
+.address-row .ui-input,
+.address-row .ui-btn {
+  margin: 0;
+}
+
+/* 주소 검색 버튼: ui-btn 그대로, 여기선 높이만 통일 */
+.address-search {
+  height: 38px;
+  white-space: nowrap;
+}
+
+/* =========================
+   Actions (Myinfo.css와 동일하게 가운데 정렬)
+   ========================= */
+
+.myinfoedit-actions {
+  margin-top: var(--s-6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--s-2);
+}
+
+/* Button 컴포넌트 + submit 버튼 크기 통일 */
+.myinfoedit-actions .ui-btn,
+.myinfoedit-actions .Button,
+.myinfoedit-actions button {
+  width: 140px;
+  height: 38px;
+  margin: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================
+   Error message
+   ========================= */
+
+.error-message {
+  margin: var(--s-4) auto 0;
+  max-width: 320px;
+  text-align: center;
+  font-size: var(--fs-2);
+  color: var(--c-danger, #d33);
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 720px) {
+  .myinfoedit-photoBox {
+    width: 220px;
+    height: 220px;
+  }
+
+  .myinfoedit-section .ui-input,
+  .myinfoedit-help,
+  .address-row,
+  .error-message {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 420px) {
+  .myinfoedit-photoBox {
+    width: 200px;
+    height: 200px;
+  }
+
+  .address-row {
+    grid-template-columns: 1fr; /* 버튼 아래로 */
+  }
+
+  .address-search {
+    width: 100%;
+  }
+
+  .myinfoedit-actions {
+    flex-direction: column;
+  }
+
+  .myinfoedit-actions .ui-btn,
+  .myinfoedit-actions .Button,
+  .myinfoedit-actions button {
+    width: 100%;
+    max-width: 500px;
+  }
+}

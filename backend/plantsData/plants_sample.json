@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "id": "plant-001",
+      "name": "Monstera deliciosa",
+      "image": "/plants/monstera.jpg",
+      "care": "Bright indirect light, water when top soil dries.",
+      "allergy": "mild",
+      "pet_safe": false
+    }
+  ]
+}

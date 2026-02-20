@@ -1,0 +1,3066 @@
+[
+  {
+    "ts": 1768198597238,
+    "client_key": "127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "best_point": null,
+    "plants": [],
+    "detail_text": "상세 입력",
+    "result": {
+      "ts": 1768129326.1331768,
+      "image": "D:\\study\\07.FinalProject\\01.project\\01.BackEnd\\rev_01\\uploads\\room_fcf16e00d2ff4a6c91aefde997df3f5b.jpg",
+      "occ_mode": "v8",
+      "depth_ok": true,
+      "max_n": 6,
+      "window_bbox": [
+        572,
+        259,
+        598,
+        504
+      ],
+      "light_origin": [
+        871.0,
+        687.4000244140625
+      ],
+      "best_spot": {
+        "rank": 1,
+        "score": 1.7843596528312462,
+        "pt": [
+          864,
+          684
+        ],
+        "features": {
+          "light_eff": 2.5306876623661054,
+          "occ": 0.0,
+          "wall": 0.7906976938247681,
+          "stab": 0.7479216456413269,
+          "times": {
+            "morning": 0.8412706851959229,
+            "noon": 0.9613819122314453,
+            "evening": 0.9729164838790894
+          }
+        },
+        "top_plants": [
+          {
+            "name": "올리브나무",
+            "score": 0.6163376649932066,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "아레카야자",
+            "score": 0.518021902057514,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "몬스테라",
+            "score": 0.4996376027463336,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "산세베리아",
+            "score": 0.49118498867667904,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "스투키",
+            "score": 0.4812825589671332,
+            "in_range": false,
+            "reason": "광량 근접"
+          }
+        ]
+      },
+      "spots": [
+        {
+          "rank": 1,
+          "score": 1.7843596528312462,
+          "pt": [
+            864,
+            684
+          ],
+          "features": {
+            "light_eff": 2.5306876623661054,
+            "occ": 0.0,
+            "wall": 0.7906976938247681,
+            "stab": 0.7479216456413269,
+            "times": {
+              "morning": 0.8412706851959229,
+              "noon": 0.9613819122314453,
+              "evening": 0.9729164838790894
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.6163376649932066,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.518021902057514,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.4996376027463336,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.49118498867667904,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.4812825589671332,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "score": 1.7490787068317566,
+          "pt": [
+            684,
+            612
+          ],
+          "features": {
+            "light_eff": 2.1819224169602336,
+            "occ": 0.0,
+            "wall": 0.25581395626068115,
+            "stab": 0.8977649211883545,
+            "times": {
+              "morning": 0.6870988011360168,
+              "noon": 0.7910739183425903,
+              "evening": 0.7847210764884949
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6114436394919116,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.5784982421229048,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5361797054922288,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5212497883888312,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "score": 1.735146943043114,
+          "pt": [
+            756,
+            612
+          ],
+          "features": {
+            "light_eff": 2.1924287716408,
+            "occ": 0.0,
+            "wall": 0.22093023359775543,
+            "stab": 0.8357861638069153,
+            "times": {
+              "morning": 0.6614621877670288,
+              "noon": 0.8100258111953735,
+              "evening": 0.8546342849731445
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6076701462124467,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.575387021182451,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5345170547839306,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5197900504142289,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "score": 1.709520397772844,
+          "pt": [
+            630,
+            576
+          ],
+          "features": {
+            "light_eff": 2.142404588692409,
+            "occ": 0.0,
+            "wall": 0.30679646134376526,
+            "stab": 0.8143913745880127,
+            "times": {
+              "morning": 0.6844476461410522,
+              "noon": 0.8001223802566528,
+              "evening": 0.8066811561584473
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6263903817951764,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.5907621443695289,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5426503650527674,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5269184120469432,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "score": 1.6654474763617335,
+          "pt": [
+            558,
+            558
+          ],
+          "features": {
+            "light_eff": 2.0700108590876085,
+            "occ": 0.0,
+            "wall": 0.24418604373931885,
+            "stab": 0.8750813007354736,
+            "times": {
+              "morning": 0.6522084474563599,
+              "noon": 0.7582623958587646,
+              "evening": 0.754181981086731
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6572938292598434,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.6158207029034807,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5554724275930856,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5380934792667005,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "score": 1.4373101200949188,
+          "pt": [
+            594,
+            648
+          ],
+          "features": {
+            "light_eff": 1.8108238195512567,
+            "occ": 0.05555555555555555,
+            "wall": 0.18132323026657104,
+            "stab": 0.7077528238296509,
+            "times": {
+              "morning": 0.687096118927002,
+              "noon": 0.7310096025466919,
+              "evening": 0.662623405456543
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.8279966461640745,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.7473864259655159,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.615081468221838,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5890593943962165,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "ts": 1768198659439,
+    "client_key": "127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "best_point": null,
+    "plants": [],
+    "detail_text": "식물 경험: beginner / 반려동물 여부: true",
+    "result": {
+      "ts": 1768129326.1331768,
+      "image": "D:\\study\\07.FinalProject\\01.project\\01.BackEnd\\rev_01\\uploads\\room_fcf16e00d2ff4a6c91aefde997df3f5b.jpg",
+      "occ_mode": "v8",
+      "depth_ok": true,
+      "max_n": 6,
+      "window_bbox": [
+        572,
+        259,
+        598,
+        504
+      ],
+      "light_origin": [
+        871.0,
+        687.4000244140625
+      ],
+      "best_spot": {
+        "rank": 1,
+        "score": 1.7843596528312462,
+        "pt": [
+          864,
+          684
+        ],
+        "features": {
+          "light_eff": 2.5306876623661054,
+          "occ": 0.0,
+          "wall": 0.7906976938247681,
+          "stab": 0.7479216456413269,
+          "times": {
+            "morning": 0.8412706851959229,
+            "noon": 0.9613819122314453,
+            "evening": 0.9729164838790894
+          }
+        },
+        "top_plants": [
+          {
+            "name": "올리브나무",
+            "score": 0.6163376649932066,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "아레카야자",
+            "score": 0.518021902057514,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "몬스테라",
+            "score": 0.4996376027463336,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "산세베리아",
+            "score": 0.49118498867667904,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "스투키",
+            "score": 0.4812825589671332,
+            "in_range": false,
+            "reason": "광량 근접"
+          }
+        ]
+      },
+      "spots": [
+        {
+          "rank": 1,
+          "score": 1.7843596528312462,
+          "pt": [
+            864,
+            684
+          ],
+          "features": {
+            "light_eff": 2.5306876623661054,
+            "occ": 0.0,
+            "wall": 0.7906976938247681,
+            "stab": 0.7479216456413269,
+            "times": {
+              "morning": 0.8412706851959229,
+              "noon": 0.9613819122314453,
+              "evening": 0.9729164838790894
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.6163376649932066,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.518021902057514,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.4996376027463336,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.49118498867667904,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.4812825589671332,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "score": 1.7490787068317566,
+          "pt": [
+            684,
+            612
+          ],
+          "features": {
+            "light_eff": 2.1819224169602336,
+            "occ": 0.0,
+            "wall": 0.25581395626068115,
+            "stab": 0.8977649211883545,
+            "times": {
+              "morning": 0.6870988011360168,
+              "noon": 0.7910739183425903,
+              "evening": 0.7847210764884949
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6114436394919116,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.5784982421229048,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5361797054922288,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5212497883888312,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "score": 1.735146943043114,
+          "pt": [
+            756,
+            612
+          ],
+          "features": {
+            "light_eff": 2.1924287716408,
+            "occ": 0.0,
+            "wall": 0.22093023359775543,
+            "stab": 0.8357861638069153,
+            "times": {
+              "morning": 0.6614621877670288,
+              "noon": 0.8100258111953735,
+              "evening": 0.8546342849731445
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6076701462124467,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.575387021182451,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5345170547839306,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5197900504142289,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "score": 1.709520397772844,
+          "pt": [
+            630,
+            576
+          ],
+          "features": {
+            "light_eff": 2.142404588692409,
+            "occ": 0.0,
+            "wall": 0.30679646134376526,
+            "stab": 0.8143913745880127,
+            "times": {
+              "morning": 0.6844476461410522,
+              "noon": 0.8001223802566528,
+              "evening": 0.8066811561584473
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6263903817951764,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.5907621443695289,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5426503650527674,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5269184120469432,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "score": 1.6654474763617335,
+          "pt": [
+            558,
+            558
+          ],
+          "features": {
+            "light_eff": 2.0700108590876085,
+            "occ": 0.0,
+            "wall": 0.24418604373931885,
+            "stab": 0.8750813007354736,
+            "times": {
+              "morning": 0.6522084474563599,
+              "noon": 0.7582623958587646,
+              "evening": 0.754181981086731
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6572938292598434,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.6158207029034807,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5554724275930856,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5380934792667005,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "score": 1.4373101200949188,
+          "pt": [
+            594,
+            648
+          ],
+          "features": {
+            "light_eff": 1.8108238195512567,
+            "occ": 0.05555555555555555,
+            "wall": 0.18132323026657104,
+            "stab": 0.7077528238296509,
+            "times": {
+              "morning": 0.687096118927002,
+              "noon": 0.7310096025466919,
+              "evening": 0.662623405456543
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.8279966461640745,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.7473864259655159,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.615081468221838,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5890593943962165,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "ts": 1768198724951,
+    "client_key": "127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "best_point": null,
+    "plants": [],
+    "detail_text": "식물 경험: beginner / 반려동물 여부: true",
+    "result": {
+      "ts": 1768129326.1331768,
+      "image": "D:\\study\\07.FinalProject\\01.project\\01.BackEnd\\rev_01\\uploads\\room_fcf16e00d2ff4a6c91aefde997df3f5b.jpg",
+      "occ_mode": "v8",
+      "depth_ok": true,
+      "max_n": 6,
+      "window_bbox": [
+        572,
+        259,
+        598,
+        504
+      ],
+      "light_origin": [
+        871.0,
+        687.4000244140625
+      ],
+      "best_spot": {
+        "rank": 1,
+        "score": 1.7843596528312462,
+        "pt": [
+          864,
+          684
+        ],
+        "features": {
+          "light_eff": 2.5306876623661054,
+          "occ": 0.0,
+          "wall": 0.7906976938247681,
+          "stab": 0.7479216456413269,
+          "times": {
+            "morning": 0.8412706851959229,
+            "noon": 0.9613819122314453,
+            "evening": 0.9729164838790894
+          }
+        },
+        "top_plants": [
+          {
+            "name": "올리브나무",
+            "score": 0.6163376649932066,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "아레카야자",
+            "score": 0.518021902057514,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "몬스테라",
+            "score": 0.4996376027463336,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "산세베리아",
+            "score": 0.49118498867667904,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "스투키",
+            "score": 0.4812825589671332,
+            "in_range": false,
+            "reason": "광량 근접"
+          }
+        ]
+      },
+      "spots": [
+        {
+          "rank": 1,
+          "score": 1.7843596528312462,
+          "pt": [
+            864,
+            684
+          ],
+          "features": {
+            "light_eff": 2.5306876623661054,
+            "occ": 0.0,
+            "wall": 0.7906976938247681,
+            "stab": 0.7479216456413269,
+            "times": {
+              "morning": 0.8412706851959229,
+              "noon": 0.9613819122314453,
+              "evening": 0.9729164838790894
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.6163376649932066,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.518021902057514,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.4996376027463336,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.49118498867667904,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.4812825589671332,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "score": 1.7490787068317566,
+          "pt": [
+            684,
+            612
+          ],
+          "features": {
+            "light_eff": 2.1819224169602336,
+            "occ": 0.0,
+            "wall": 0.25581395626068115,
+            "stab": 0.8977649211883545,
+            "times": {
+              "morning": 0.6870988011360168,
+              "noon": 0.7910739183425903,
+              "evening": 0.7847210764884949
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6114436394919116,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.5784982421229048,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5361797054922288,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5212497883888312,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "score": 1.735146943043114,
+          "pt": [
+            756,
+            612
+          ],
+          "features": {
+            "light_eff": 2.1924287716408,
+            "occ": 0.0,
+            "wall": 0.22093023359775543,
+            "stab": 0.8357861638069153,
+            "times": {
+              "morning": 0.6614621877670288,
+              "noon": 0.8100258111953735,
+              "evening": 0.8546342849731445
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6076701462124467,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.575387021182451,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5345170547839306,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5197900504142289,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "score": 1.709520397772844,
+          "pt": [
+            630,
+            576
+          ],
+          "features": {
+            "light_eff": 2.142404588692409,
+            "occ": 0.0,
+            "wall": 0.30679646134376526,
+            "stab": 0.8143913745880127,
+            "times": {
+              "morning": 0.6844476461410522,
+              "noon": 0.8001223802566528,
+              "evening": 0.8066811561584473
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6263903817951764,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.5907621443695289,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5426503650527674,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5269184120469432,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "score": 1.6654474763617335,
+          "pt": [
+            558,
+            558
+          ],
+          "features": {
+            "light_eff": 2.0700108590876085,
+            "occ": 0.0,
+            "wall": 0.24418604373931885,
+            "stab": 0.8750813007354736,
+            "times": {
+              "morning": 0.6522084474563599,
+              "noon": 0.7582623958587646,
+              "evening": 0.754181981086731
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6572938292598434,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.6158207029034807,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5554724275930856,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5380934792667005,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "score": 1.4373101200949188,
+          "pt": [
+            594,
+            648
+          ],
+          "features": {
+            "light_eff": 1.8108238195512567,
+            "occ": 0.05555555555555555,
+            "wall": 0.18132323026657104,
+            "stab": 0.7077528238296509,
+            "times": {
+              "morning": 0.687096118927002,
+              "noon": 0.7310096025466919,
+              "evening": 0.662623405456543
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.8279966461640745,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.7473864259655159,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.615081468221838,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5890593943962165,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "ts": 1768199995192,
+    "client_key": "127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "best_point": null,
+    "plants": [],
+    "detail_text": "식물 경험: beginner / 반려동물 여부: true",
+    "result": {
+      "ts": 1768129326.1331768,
+      "image": "D:\\study\\07.FinalProject\\01.project\\01.BackEnd\\rev_01\\uploads\\room_fcf16e00d2ff4a6c91aefde997df3f5b.jpg",
+      "occ_mode": "v8",
+      "depth_ok": true,
+      "max_n": 6,
+      "window_bbox": [
+        572,
+        259,
+        598,
+        504
+      ],
+      "light_origin": [
+        871.0,
+        687.4000244140625
+      ],
+      "best_spot": {
+        "rank": 1,
+        "score": 1.7843596528312462,
+        "pt": [
+          864,
+          684
+        ],
+        "features": {
+          "light_eff": 2.5306876623661054,
+          "occ": 0.0,
+          "wall": 0.7906976938247681,
+          "stab": 0.7479216456413269,
+          "times": {
+            "morning": 0.8412706851959229,
+            "noon": 0.9613819122314453,
+            "evening": 0.9729164838790894
+          }
+        },
+        "top_plants": [
+          {
+            "name": "올리브나무",
+            "score": 0.6163376649932066,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "아레카야자",
+            "score": 0.518021902057514,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "몬스테라",
+            "score": 0.4996376027463336,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "산세베리아",
+            "score": 0.49118498867667904,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "스투키",
+            "score": 0.4812825589671332,
+            "in_range": false,
+            "reason": "광량 근접"
+          }
+        ]
+      },
+      "spots": [
+        {
+          "rank": 1,
+          "score": 1.7843596528312462,
+          "pt": [
+            864,
+            684
+          ],
+          "features": {
+            "light_eff": 2.5306876623661054,
+            "occ": 0.0,
+            "wall": 0.7906976938247681,
+            "stab": 0.7479216456413269,
+            "times": {
+              "morning": 0.8412706851959229,
+              "noon": 0.9613819122314453,
+              "evening": 0.9729164838790894
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.6163376649932066,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.518021902057514,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.4996376027463336,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.49118498867667904,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.4812825589671332,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "score": 1.7490787068317566,
+          "pt": [
+            684,
+            612
+          ],
+          "features": {
+            "light_eff": 2.1819224169602336,
+            "occ": 0.0,
+            "wall": 0.25581395626068115,
+            "stab": 0.8977649211883545,
+            "times": {
+              "morning": 0.6870988011360168,
+              "noon": 0.7910739183425903,
+              "evening": 0.7847210764884949
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6114436394919116,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.5784982421229048,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5361797054922288,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5212497883888312,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "score": 1.735146943043114,
+          "pt": [
+            756,
+            612
+          ],
+          "features": {
+            "light_eff": 2.1924287716408,
+            "occ": 0.0,
+            "wall": 0.22093023359775543,
+            "stab": 0.8357861638069153,
+            "times": {
+              "morning": 0.6614621877670288,
+              "noon": 0.8100258111953735,
+              "evening": 0.8546342849731445
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6076701462124467,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.575387021182451,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5345170547839306,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5197900504142289,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "score": 1.709520397772844,
+          "pt": [
+            630,
+            576
+          ],
+          "features": {
+            "light_eff": 2.142404588692409,
+            "occ": 0.0,
+            "wall": 0.30679646134376526,
+            "stab": 0.8143913745880127,
+            "times": {
+              "morning": 0.6844476461410522,
+              "noon": 0.8001223802566528,
+              "evening": 0.8066811561584473
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6263903817951764,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.5907621443695289,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5426503650527674,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5269184120469432,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "score": 1.6654474763617335,
+          "pt": [
+            558,
+            558
+          ],
+          "features": {
+            "light_eff": 2.0700108590876085,
+            "occ": 0.0,
+            "wall": 0.24418604373931885,
+            "stab": 0.8750813007354736,
+            "times": {
+              "morning": 0.6522084474563599,
+              "noon": 0.7582623958587646,
+              "evening": 0.754181981086731
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6572938292598434,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.6158207029034807,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5554724275930856,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5380934792667005,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "score": 1.4373101200949188,
+          "pt": [
+            594,
+            648
+          ],
+          "features": {
+            "light_eff": 1.8108238195512567,
+            "occ": 0.05555555555555555,
+            "wall": 0.18132323026657104,
+            "stab": 0.7077528238296509,
+            "times": {
+              "morning": 0.687096118927002,
+              "noon": 0.7310096025466919,
+              "evening": 0.662623405456543
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.8279966461640745,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.7473864259655159,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.615081468221838,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5890593943962165,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "ts": 1768200279893,
+    "client_key": "127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "best_point": null,
+    "plants": [],
+    "detail_text": "식물 경험: beginner / 반려동물 여부: true",
+    "result": {
+      "ts": 1768129326.1331768,
+      "image": "D:\\study\\07.FinalProject\\01.project\\01.BackEnd\\rev_01\\uploads\\room_fcf16e00d2ff4a6c91aefde997df3f5b.jpg",
+      "occ_mode": "v8",
+      "depth_ok": true,
+      "max_n": 6,
+      "window_bbox": [
+        572,
+        259,
+        598,
+        504
+      ],
+      "light_origin": [
+        871.0,
+        687.4000244140625
+      ],
+      "best_spot": {
+        "rank": 1,
+        "score": 1.7843596528312462,
+        "pt": [
+          864,
+          684
+        ],
+        "features": {
+          "light_eff": 2.5306876623661054,
+          "occ": 0.0,
+          "wall": 0.7906976938247681,
+          "stab": 0.7479216456413269,
+          "times": {
+            "morning": 0.8412706851959229,
+            "noon": 0.9613819122314453,
+            "evening": 0.9729164838790894
+          }
+        },
+        "top_plants": [
+          {
+            "name": "올리브나무",
+            "score": 0.6163376649932066,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "아레카야자",
+            "score": 0.518021902057514,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "몬스테라",
+            "score": 0.4996376027463336,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "산세베리아",
+            "score": 0.49118498867667904,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "스투키",
+            "score": 0.4812825589671332,
+            "in_range": false,
+            "reason": "광량 근접"
+          }
+        ]
+      },
+      "spots": [
+        {
+          "rank": 1,
+          "score": 1.7843596528312462,
+          "pt": [
+            864,
+            684
+          ],
+          "features": {
+            "light_eff": 2.5306876623661054,
+            "occ": 0.0,
+            "wall": 0.7906976938247681,
+            "stab": 0.7479216456413269,
+            "times": {
+              "morning": 0.8412706851959229,
+              "noon": 0.9613819122314453,
+              "evening": 0.9729164838790894
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.6163376649932066,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.518021902057514,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.4996376027463336,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.49118498867667904,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.4812825589671332,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "score": 1.7490787068317566,
+          "pt": [
+            684,
+            612
+          ],
+          "features": {
+            "light_eff": 2.1819224169602336,
+            "occ": 0.0,
+            "wall": 0.25581395626068115,
+            "stab": 0.8977649211883545,
+            "times": {
+              "morning": 0.6870988011360168,
+              "noon": 0.7910739183425903,
+              "evening": 0.7847210764884949
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6114436394919116,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.5784982421229048,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5361797054922288,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5212497883888312,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "score": 1.735146943043114,
+          "pt": [
+            756,
+            612
+          ],
+          "features": {
+            "light_eff": 2.1924287716408,
+            "occ": 0.0,
+            "wall": 0.22093023359775543,
+            "stab": 0.8357861638069153,
+            "times": {
+              "morning": 0.6614621877670288,
+              "noon": 0.8100258111953735,
+              "evening": 0.8546342849731445
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6076701462124467,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.575387021182451,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5345170547839306,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5197900504142289,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "score": 1.709520397772844,
+          "pt": [
+            630,
+            576
+          ],
+          "features": {
+            "light_eff": 2.142404588692409,
+            "occ": 0.0,
+            "wall": 0.30679646134376526,
+            "stab": 0.8143913745880127,
+            "times": {
+              "morning": 0.6844476461410522,
+              "noon": 0.8001223802566528,
+              "evening": 0.8066811561584473
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6263903817951764,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.5907621443695289,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5426503650527674,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5269184120469432,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "score": 1.6654474763617335,
+          "pt": [
+            558,
+            558
+          ],
+          "features": {
+            "light_eff": 2.0700108590876085,
+            "occ": 0.0,
+            "wall": 0.24418604373931885,
+            "stab": 0.8750813007354736,
+            "times": {
+              "morning": 0.6522084474563599,
+              "noon": 0.7582623958587646,
+              "evening": 0.754181981086731
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6572938292598434,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.6158207029034807,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5554724275930856,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5380934792667005,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "score": 1.4373101200949188,
+          "pt": [
+            594,
+            648
+          ],
+          "features": {
+            "light_eff": 1.8108238195512567,
+            "occ": 0.05555555555555555,
+            "wall": 0.18132323026657104,
+            "stab": 0.7077528238296509,
+            "times": {
+              "morning": 0.687096118927002,
+              "noon": 0.7310096025466919,
+              "evening": 0.662623405456543
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.8279966461640745,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.7473864259655159,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.615081468221838,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5890593943962165,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "ts": 1768200841238,
+    "client_key": "127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "best_point": null,
+    "plants": [],
+    "detail_text": "식물 경험: beginner / 반려동물 여부: true",
+    "result": {
+      "ts": 1768129326.1331768,
+      "image": "D:\\study\\07.FinalProject\\01.project\\01.BackEnd\\rev_01\\uploads\\room_fcf16e00d2ff4a6c91aefde997df3f5b.jpg",
+      "occ_mode": "v8",
+      "depth_ok": true,
+      "max_n": 6,
+      "window_bbox": [
+        572,
+        259,
+        598,
+        504
+      ],
+      "light_origin": [
+        871.0,
+        687.4000244140625
+      ],
+      "best_spot": {
+        "rank": 1,
+        "score": 1.7843596528312462,
+        "pt": [
+          864,
+          684
+        ],
+        "features": {
+          "light_eff": 2.5306876623661054,
+          "occ": 0.0,
+          "wall": 0.7906976938247681,
+          "stab": 0.7479216456413269,
+          "times": {
+            "morning": 0.8412706851959229,
+            "noon": 0.9613819122314453,
+            "evening": 0.9729164838790894
+          }
+        },
+        "top_plants": [
+          {
+            "name": "올리브나무",
+            "score": 0.6163376649932066,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "아레카야자",
+            "score": 0.518021902057514,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "몬스테라",
+            "score": 0.4996376027463336,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "산세베리아",
+            "score": 0.49118498867667904,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "스투키",
+            "score": 0.4812825589671332,
+            "in_range": false,
+            "reason": "광량 근접"
+          }
+        ]
+      },
+      "spots": [
+        {
+          "rank": 1,
+          "score": 1.7843596528312462,
+          "pt": [
+            864,
+            684
+          ],
+          "features": {
+            "light_eff": 2.5306876623661054,
+            "occ": 0.0,
+            "wall": 0.7906976938247681,
+            "stab": 0.7479216456413269,
+            "times": {
+              "morning": 0.8412706851959229,
+              "noon": 0.9613819122314453,
+              "evening": 0.9729164838790894
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.6163376649932066,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.518021902057514,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.4996376027463336,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.49118498867667904,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.4812825589671332,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "score": 1.7490787068317566,
+          "pt": [
+            684,
+            612
+          ],
+          "features": {
+            "light_eff": 2.1819224169602336,
+            "occ": 0.0,
+            "wall": 0.25581395626068115,
+            "stab": 0.8977649211883545,
+            "times": {
+              "morning": 0.6870988011360168,
+              "noon": 0.7910739183425903,
+              "evening": 0.7847210764884949
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6114436394919116,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.5784982421229048,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5361797054922288,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5212497883888312,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "score": 1.735146943043114,
+          "pt": [
+            756,
+            612
+          ],
+          "features": {
+            "light_eff": 2.1924287716408,
+            "occ": 0.0,
+            "wall": 0.22093023359775543,
+            "stab": 0.8357861638069153,
+            "times": {
+              "morning": 0.6614621877670288,
+              "noon": 0.8100258111953735,
+              "evening": 0.8546342849731445
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6076701462124467,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.575387021182451,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5345170547839306,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5197900504142289,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "score": 1.709520397772844,
+          "pt": [
+            630,
+            576
+          ],
+          "features": {
+            "light_eff": 2.142404588692409,
+            "occ": 0.0,
+            "wall": 0.30679646134376526,
+            "stab": 0.8143913745880127,
+            "times": {
+              "morning": 0.6844476461410522,
+              "noon": 0.8001223802566528,
+              "evening": 0.8066811561584473
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6263903817951764,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.5907621443695289,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5426503650527674,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5269184120469432,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "score": 1.6654474763617335,
+          "pt": [
+            558,
+            558
+          ],
+          "features": {
+            "light_eff": 2.0700108590876085,
+            "occ": 0.0,
+            "wall": 0.24418604373931885,
+            "stab": 0.8750813007354736,
+            "times": {
+              "morning": 0.6522084474563599,
+              "noon": 0.7582623958587646,
+              "evening": 0.754181981086731
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6572938292598434,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.6158207029034807,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5554724275930856,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5380934792667005,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "score": 1.4373101200949188,
+          "pt": [
+            594,
+            648
+          ],
+          "features": {
+            "light_eff": 1.8108238195512567,
+            "occ": 0.05555555555555555,
+            "wall": 0.18132323026657104,
+            "stab": 0.7077528238296509,
+            "times": {
+              "morning": 0.687096118927002,
+              "noon": 0.7310096025466919,
+              "evening": 0.662623405456543
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.8279966461640745,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.7473864259655159,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.615081468221838,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5890593943962165,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "ts": 1768201798638,
+    "client_key": "127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "best_point": null,
+    "plants": [],
+    "detail_text": "식물 경험: beginner / 반려동물 여부: true",
+    "result": {
+      "ts": 1768129326.1331768,
+      "image": "D:\\study\\07.FinalProject\\01.project\\01.BackEnd\\rev_01\\uploads\\room_fcf16e00d2ff4a6c91aefde997df3f5b.jpg",
+      "occ_mode": "v8",
+      "depth_ok": true,
+      "max_n": 6,
+      "window_bbox": [
+        572,
+        259,
+        598,
+        504
+      ],
+      "light_origin": [
+        871.0,
+        687.4000244140625
+      ],
+      "best_spot": {
+        "rank": 1,
+        "score": 1.7843596528312462,
+        "pt": [
+          864,
+          684
+        ],
+        "features": {
+          "light_eff": 2.5306876623661054,
+          "occ": 0.0,
+          "wall": 0.7906976938247681,
+          "stab": 0.7479216456413269,
+          "times": {
+            "morning": 0.8412706851959229,
+            "noon": 0.9613819122314453,
+            "evening": 0.9729164838790894
+          }
+        },
+        "top_plants": [
+          {
+            "name": "올리브나무",
+            "score": 0.6163376649932066,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "아레카야자",
+            "score": 0.518021902057514,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "몬스테라",
+            "score": 0.4996376027463336,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "산세베리아",
+            "score": 0.49118498867667904,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "스투키",
+            "score": 0.4812825589671332,
+            "in_range": false,
+            "reason": "광량 근접"
+          }
+        ]
+      },
+      "spots": [
+        {
+          "rank": 1,
+          "score": 1.7843596528312462,
+          "pt": [
+            864,
+            684
+          ],
+          "features": {
+            "light_eff": 2.5306876623661054,
+            "occ": 0.0,
+            "wall": 0.7906976938247681,
+            "stab": 0.7479216456413269,
+            "times": {
+              "morning": 0.8412706851959229,
+              "noon": 0.9613819122314453,
+              "evening": 0.9729164838790894
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.6163376649932066,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.518021902057514,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.4996376027463336,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.49118498867667904,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.4812825589671332,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "score": 1.7490787068317566,
+          "pt": [
+            684,
+            612
+          ],
+          "features": {
+            "light_eff": 2.1819224169602336,
+            "occ": 0.0,
+            "wall": 0.25581395626068115,
+            "stab": 0.8977649211883545,
+            "times": {
+              "morning": 0.6870988011360168,
+              "noon": 0.7910739183425903,
+              "evening": 0.7847210764884949
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6114436394919116,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.5784982421229048,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5361797054922288,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5212497883888312,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "score": 1.735146943043114,
+          "pt": [
+            756,
+            612
+          ],
+          "features": {
+            "light_eff": 2.1924287716408,
+            "occ": 0.0,
+            "wall": 0.22093023359775543,
+            "stab": 0.8357861638069153,
+            "times": {
+              "morning": 0.6614621877670288,
+              "noon": 0.8100258111953735,
+              "evening": 0.8546342849731445
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6076701462124467,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.575387021182451,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5345170547839306,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5197900504142289,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "score": 1.709520397772844,
+          "pt": [
+            630,
+            576
+          ],
+          "features": {
+            "light_eff": 2.142404588692409,
+            "occ": 0.0,
+            "wall": 0.30679646134376526,
+            "stab": 0.8143913745880127,
+            "times": {
+              "morning": 0.6844476461410522,
+              "noon": 0.8001223802566528,
+              "evening": 0.8066811561584473
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6263903817951764,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.5907621443695289,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5426503650527674,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5269184120469432,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "score": 1.6654474763617335,
+          "pt": [
+            558,
+            558
+          ],
+          "features": {
+            "light_eff": 2.0700108590876085,
+            "occ": 0.0,
+            "wall": 0.24418604373931885,
+            "stab": 0.8750813007354736,
+            "times": {
+              "morning": 0.6522084474563599,
+              "noon": 0.7582623958587646,
+              "evening": 0.754181981086731
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6572938292598434,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.6158207029034807,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5554724275930856,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5380934792667005,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "score": 1.4373101200949188,
+          "pt": [
+            594,
+            648
+          ],
+          "features": {
+            "light_eff": 1.8108238195512567,
+            "occ": 0.05555555555555555,
+            "wall": 0.18132323026657104,
+            "stab": 0.7077528238296509,
+            "times": {
+              "morning": 0.687096118927002,
+              "noon": 0.7310096025466919,
+              "evening": 0.662623405456543
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.8279966461640745,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.7473864259655159,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.615081468221838,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5890593943962165,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "ts": 1768203621500,
+    "client_key": "127.0.0.1|Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+    "best_point": null,
+    "plants": [],
+    "detail_text": "식물 경험: beginner / 반려동물 여부: true",
+    "result": {
+      "ts": 1768129326.1331768,
+      "image": "D:\\study\\07.FinalProject\\01.project\\01.BackEnd\\rev_01\\uploads\\room_fcf16e00d2ff4a6c91aefde997df3f5b.jpg",
+      "occ_mode": "v8",
+      "depth_ok": true,
+      "max_n": 6,
+      "window_bbox": [
+        572,
+        259,
+        598,
+        504
+      ],
+      "light_origin": [
+        871.0,
+        687.4000244140625
+      ],
+      "best_spot": {
+        "rank": 1,
+        "score": 1.7843596528312462,
+        "pt": [
+          864,
+          684
+        ],
+        "features": {
+          "light_eff": 2.5306876623661054,
+          "occ": 0.0,
+          "wall": 0.7906976938247681,
+          "stab": 0.7479216456413269,
+          "times": {
+            "morning": 0.8412706851959229,
+            "noon": 0.9613819122314453,
+            "evening": 0.9729164838790894
+          }
+        },
+        "top_plants": [
+          {
+            "name": "올리브나무",
+            "score": 0.6163376649932066,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "아레카야자",
+            "score": 0.518021902057514,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "몬스테라",
+            "score": 0.4996376027463336,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "산세베리아",
+            "score": 0.49118498867667904,
+            "in_range": false,
+            "reason": "광량 근접"
+          },
+          {
+            "name": "스투키",
+            "score": 0.4812825589671332,
+            "in_range": false,
+            "reason": "광량 근접"
+          }
+        ]
+      },
+      "spots": [
+        {
+          "rank": 1,
+          "score": 1.7843596528312462,
+          "pt": [
+            864,
+            684
+          ],
+          "features": {
+            "light_eff": 2.5306876623661054,
+            "occ": 0.0,
+            "wall": 0.7906976938247681,
+            "stab": 0.7479216456413269,
+            "times": {
+              "morning": 0.8412706851959229,
+              "noon": 0.9613819122314453,
+              "evening": 0.9729164838790894
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.6163376649932066,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.518021902057514,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.4996376027463336,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.49118498867667904,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.4812825589671332,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 2,
+          "score": 1.7490787068317566,
+          "pt": [
+            684,
+            612
+          ],
+          "features": {
+            "light_eff": 2.1819224169602336,
+            "occ": 0.0,
+            "wall": 0.25581395626068115,
+            "stab": 0.8977649211883545,
+            "times": {
+              "morning": 0.6870988011360168,
+              "noon": 0.7910739183425903,
+              "evening": 0.7847210764884949
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6114436394919116,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.5784982421229048,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5361797054922288,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5212497883888312,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 3,
+          "score": 1.735146943043114,
+          "pt": [
+            756,
+            612
+          ],
+          "features": {
+            "light_eff": 2.1924287716408,
+            "occ": 0.0,
+            "wall": 0.22093023359775543,
+            "stab": 0.8357861638069153,
+            "times": {
+              "morning": 0.6614621877670288,
+              "noon": 0.8100258111953735,
+              "evening": 0.8546342849731445
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6076701462124467,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.575387021182451,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5345170547839306,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5197900504142289,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 4,
+          "score": 1.709520397772844,
+          "pt": [
+            630,
+            576
+          ],
+          "features": {
+            "light_eff": 2.142404588692409,
+            "occ": 0.0,
+            "wall": 0.30679646134376526,
+            "stab": 0.8143913745880127,
+            "times": {
+              "morning": 0.6844476461410522,
+              "noon": 0.8001223802566528,
+              "evening": 0.8066811561584473
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6263903817951764,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.5907621443695289,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5426503650527674,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5269184120469432,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 5,
+          "score": 1.6654474763617335,
+          "pt": [
+            558,
+            558
+          ],
+          "features": {
+            "light_eff": 2.0700108590876085,
+            "occ": 0.0,
+            "wall": 0.24418604373931885,
+            "stab": 0.8750813007354736,
+            "times": {
+              "morning": 0.6522084474563599,
+              "noon": 0.7582623958587646,
+              "evening": 0.754181981086731
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.6572938292598434,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.6158207029034807,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.5554724275930856,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5380934792667005,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        },
+        {
+          "rank": 6,
+          "score": 1.4373101200949188,
+          "pt": [
+            594,
+            648
+          ],
+          "features": {
+            "light_eff": 1.8108238195512567,
+            "occ": 0.05555555555555555,
+            "wall": 0.18132323026657104,
+            "stab": 0.7077528238296509,
+            "times": {
+              "morning": 0.687096118927002,
+              "noon": 0.7310096025466919,
+              "evening": 0.662623405456543
+            }
+          },
+          "top_plants": [
+            {
+              "name": "올리브나무",
+              "score": 0.895,
+              "in_range": true,
+              "reason": "광량 적합"
+            },
+            {
+              "name": "아레카야자",
+              "score": 0.8279966461640745,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "몬스테라",
+              "score": 0.7473864259655159,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "산세베리아",
+              "score": 0.615081468221838,
+              "in_range": false,
+              "reason": "광량 근접"
+            },
+            {
+              "name": "스투키",
+              "score": 0.5890593943962165,
+              "in_range": false,
+              "reason": "광량 근접"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

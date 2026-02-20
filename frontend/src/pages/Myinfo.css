@@ -1,0 +1,98 @@
+/* =========================
+   Myinfo (Page Layout Only)
+   - l-cover / l-cover-center 재사용
+   - ui-btn는 components.css 재사용
+   ========================= */
+
+/* 제목 */
+.myinfo-title {
+  font-size: var(--fs-4);
+  margin: 0 0 var(--s-2);
+  text-align: center;
+}
+
+/* 제목 아래 라인 */
+.myinfo-divider {
+  width: 160px;
+  margin: 0 auto var(--s-5);
+}
+
+/* 전체 섹션 */
+.myinfo-section {
+  text-align: center;
+}
+
+/* =========================
+   Profile Image
+   ========================= */
+
+.myinfo-photo {
+  width: 250px; /* 🔥 크게 */
+  height: 250px;
+  margin: 0 auto var(--s-5);
+  overflow: hidden;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myinfo-photo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.myinfo-photo-empty {
+  font-size: var(--fs-2);
+  color: var(--c-muted);
+}
+
+/* =========================
+   Text Info
+   ========================= */
+
+.myinfo-text {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto var(--s-5);
+  text-align: left;
+}
+
+.myinfo-text p {
+  font-size: var(--fs-2);
+  font-weight: 600;
+  color: var(--c-text);
+  margin-bottom: var(--s-3);
+  line-height: 1.5;
+  background: rgba(255, 255, 255, 0.384);
+  padding: 7px 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* =========================
+   Actions
+   ========================= */
+
+.myinfo-actions {
+  margin-top: var(--s-6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button 컴포넌트가 결국 button을 렌더링하므로
+   여기서는 ui-btn 크기만 제어 (모양은 components.css) */
+.myinfo-actions .ui-btn,
+.myinfo-actions .Button {
+  width: 140px;
+  height: 38px;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

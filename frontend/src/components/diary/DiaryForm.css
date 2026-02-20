@@ -1,0 +1,232 @@
+:root {
+  --df-primary: #3E403B;
+  --df-accent: #8C9388;
+  --df-bg: #FAFAF8;
+  --df-glass: rgba(255, 255, 255, 0.9);
+  --df-glass-border: rgba(0, 0, 0, 0.05);
+  --df-text: #3E403B;
+  --df-text-muted: #8C9388;
+  --df-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.03);
+}
+
+.diary-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #edeae3;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.diary-form__head {
+  background: #efece6;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d8d4cc;
+}
+
+.diary-form__title {
+  color: var(--df-primary);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.diary-form__body {
+  padding: 24px;
+  flex-grow: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.diary-form__date {
+  width: 100%;
+  max-width: 400px;
+}
+
+.diary-form__date-input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 4px;
+  border: 1px solid #d4d0c8;
+  background: #f7f4ee;
+  color: var(--df-primary);
+  font-weight: 600;
+  outline: none;
+  box-shadow: none;
+}
+
+.diary-form__content {
+  width: 100%;
+  max-width: 560px;
+  background: #f1eee7;
+  border: 1px solid #d9d4cc;
+  border-radius: 4px;
+  padding: 22px;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.diary-form__image {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.diary-form__image-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #d9d4cc;
+  box-shadow: none;
+}
+
+.diary-form__image-empty {
+  width: 220px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9e6df;
+  border: 1px dashed #cfc9bf;
+  border-radius: 4px;
+  color: var(--df-text-muted);
+  text-align: center;
+  font-size: 14px;
+}
+
+.diary-form__file-btn {
+  margin-top: 6px;
+}
+
+.diary-form__file-input {
+  display: none;
+}
+
+.diary-form__file-btn:hover {
+  border-color: rgba(0, 0, 0, 0.16);
+}
+
+.diary-form__input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 4px;
+  border: 1px solid #d4d0c8;
+  background: #f7f4ee;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--df-primary);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.diary-form__input:focus {
+  border-color: var(--df-accent);
+  box-shadow: 0 0 0 3px rgba(140, 147, 136, 0.12);
+}
+
+.diary-form__textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 4px;
+  border: 1px solid #d4d0c8;
+  background: #f7f4ee;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--df-text);
+  outline: none;
+  resize: none;
+  min-height: 200px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.diary-form__textarea:focus {
+  border-color: var(--df-accent);
+  box-shadow: 0 0 0 3px rgba(140, 147, 136, 0.12);
+}
+
+/* Actions Bar */
+.diary-form__actions {
+  padding: 14px 20px;
+  background: #efece6;
+  border-top: 1px solid #d8d4cc;
+  display: flex;
+  justify-content: center;
+}
+
+.diary-form__actions-row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  max-width: 720px;
+  justify-content: center;
+}
+
+.diary-form-btn {
+  flex: 1;
+  min-width: 0;
+}
+
+.diary-form-btn span {
+  font-size: 14px;
+}
+
+.diary-form-btn:hover {
+  border-color: rgba(0, 0, 0, 0.16);
+}
+
+.diary-form-btn--primary {
+  background: #2f312d;
+  color: #fff;
+  border: 1px solid #2f312d;
+}
+
+.diary-form-btn--primary:hover {
+  background: #242622;
+}
+
+.diary-form__error {
+  color: #d32f2f;
+  font-weight: 700;
+  font-size: 14px;
+  animation: shake 0.4s ease;
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+}

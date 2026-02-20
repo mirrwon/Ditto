@@ -1,0 +1,70 @@
+{
+  "version": "kg_rules_edit_only_v1",
+  "policy": {
+    "injection_keywords_any": [
+      "시스템 프롬프트",
+      "system prompt",
+      "규칙 무시",
+      "ignore rules",
+      "개발자 메시지",
+      "developer message"
+    ],
+    "sensitive_keywords_any": [
+      "진단",
+      "치료",
+      "처방",
+      "약",
+      "병원",
+      "법률",
+      "소송",
+      "계약",
+      "투자",
+      "코인",
+      "수익률"
+    ]
+  },
+
+  "default_intent": "EDIT_REQUEST",
+
+  "edit_flow": {
+    "clarify_question": "어느 쪽을 바꿀까요? ① 식물 ② 위치 ③ 분위기 (하나만 골라줘)",
+    "max_clarify_questions": 1,
+    "summary_template": "수정 요청 이해했어: {summary} — 이대로 다시 생성할게."
+  },
+
+  "slot_rules": {
+    "keep": {
+      "plant": ["식물은 그대로", "식물 유지", "식물은 괜찮"],
+      "spot": ["위치는 그대로", "위치 유지", "자리 유지"]
+    },
+    "placement_preference": {
+      "near_window": ["창가", "창문", "햇빛쪽", "빛쪽"],
+      "far_from_window": ["안쪽", "안으로", "창문에서 멀리"],
+      "avoid_direct_sun": ["직사광 싫", "직사광 피", "햇빛이 너무 세"],
+      "more_light": ["더 밝", "밝게", "빛 더"],
+      "less_light": ["어둡게", "빛 줄", "너무 밝"]
+    },
+    "style_preset": {
+      "modern": ["모던", "미니멀", "깔끔"],
+      "natural": ["내추럴", "자연", "우드"],
+      "lush": ["풍성", "볼륨", "가득"],
+      "colorful": ["화려", "컬러풀", "쨍", "강렬"]
+    },
+    "size_direction": {
+      "bigger": ["크게", "더 크게", "사이즈 업"],
+      "smaller": ["작게", "더 작게", "사이즈 다운"]
+    },
+    "constraints": {
+      "has_pet": ["강아지", "고양이", "반려", "펫"],
+      "has_child": ["아이", "아기", "어린이"],
+      "allergy_sensitive": ["알러지", "알레르기"]
+    }
+  },
+
+  "reason_templates": {
+    "광량범위일치": "이 위치의 광량이 식물 권장 범위와 맞아요.",
+    "창문거리적합": "창문까지 거리 구간이 권장 범위와 맞아요.",
+    "거실권장": "거실 환경에 잘 맞는 식물로 분류돼요.",
+    "직사광주의": "직사광이 강한 편이라 직사광에 민감한 식물은 피했어요."
+  }
+}

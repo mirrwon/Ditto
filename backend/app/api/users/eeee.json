@@ -1,0 +1,15 @@
+{
+  "user_num": "3",
+  "user_name": "eeee",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$4txbq3WOkXKOMQag9P4/5w$rwfT9nvW1U04Msv7irO4cBbbjL+h3aBZxVOn+HLvhmw",
+  "name": "hyewon park",
+  "birthDate": "2026-02-25",
+  "phone": "010-8550-7199",
+  "email": "onlywon0527@gmail.com",
+  "gender": "male",
+  "zipcode": "02857",
+  "address1": "서울 성북구 안암로 21",
+  "address2": "6",
+  "created_at": "2026-02-09T12:33:30.520268+00:00",
+  "profile_image_filename": "profile_eeee.png"
+}

@@ -1,0 +1,68 @@
+/* ③ 배치(Layout) 전용 */
+
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: var(--s-6) var(--s-5);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-header {
+  width: 100%;
+}
+
+.login-brand {
+  text-align: center;
+}
+
+.login-top-line {
+  width: 100%;
+  margin-top: var(--s-2);
+}
+
+/* 가운데 Login 라벨 */
+.login-mid {
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: var(--s-5);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s-3);
+}
+
+.login-mid-line {
+  width: 120px;
+  height: var(--bw-line);
+  background: var(--c-text);
+  opacity: 0.75;
+}
+
+.login-mid-title {
+  text-align: center;
+}
+
+.login-form-wrap {
+  width: 500px;
+  margin-top: var(--s-5);
+}
+
+.login-bottom-line {
+  width: 500px;
+  margin: var(--s-5) 0;
+}
+
+.login-actions {
+  width: 500px;
+}
+
+/* 에러는 위치만 */
+.login-error {
+  margin-top: var(--s-2);
+  text-align: center;
+}

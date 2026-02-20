@@ -1,0 +1,648 @@
+/* =========================================================
+   JoinChat.css
+   - 3층 구조 기준:
+     1) tokens: 기존 프로젝트 tokens(var(--c-...), --s-..., --fs-...) 사용
+     2) components: 아래 컴포넌트 스타일들
+     3) layout: 페이지/배치 스타일들
+========================================================= */
+
+/* =========================
+   (3) LAYOUT
+========================= */
+
+.chatPage {
+  min-height: 100vh;
+  padding: var(--s-5);
+  position: relative;
+}
+
+/* ✅ 배경사진 위에 반투명 흰 오버레이 */
+.chatPage::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+.chatShell {
+  position: relative;
+  z-index: 1;
+
+  width: min(920px, 96vw);
+  margin: 0 auto;
+
+
+}
+
+/* header */
+.chatHeader {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; 
+  align-items: center;
+  background: transparent;  
+  
+}
+
+.chatHeader__title {
+  grid-column: 2;       /* 가운데 칸 */
+  text-align: center;
+}
+
+
+.chatHeader__h2 {
+  margin-bottom: var(--s-4);
+  font-size: var(--fs-4);
+  color: var(--c-text);
+  letter-spacing: -0.02em;
+}
+
+.chatHeader__p {
+  margin-bottom: var(--s-4);
+  font-size: var(--fs-3);
+  color: var(--c-muted);
+}
+
+.chatHeader__status {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  font-size: var(--fs-0);
+  color: var(--c-muted);
+  white-space: nowrap;
+  grid-column: 3;      
+  justify-self: end;
+}
+
+.chatStatusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%; 
+  border: 1px solid var(--c-line);
+  background: transparent;
+}
+
+.chatStatusDot--connected {
+  background: var(--c-primary);
+  border-color: var(--c-primary);
+}
+
+.chatStatusDot--loading {
+  background: var(--c-warn, var(--c-line));
+  border-color: var(--c-warn, var(--c-line));
+}
+
+.chatStatusDot--error {
+  background: var(--c-danger, var(--c-line));
+  border-color: var(--c-danger, var(--c-line));
+}
+
+.chatList {
+  margin-top: var(--s-5); 
+  height: min(90vh, 2000px);
+
+  overflow: auto;
+  padding: var(--s-5);
+
+  margin-top: var(--s-3);              
+  padding: var(--s-5);
+
+  background: rgba(255, 255, 255, 0.55);  
+  border: 1px solid var(--c-line);  
+  border-radius: var(--r-md);    
+}
+
+/* 스크롤바(원하면 삭제 가능) */
+.chatList::-webkit-scrollbar {
+  width: 10px;
+}
+.chatList::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+}
+.chatList::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chatEmpty {
+  text-align: center;
+  font-size: var(--fs-2);
+  color: var(--c-text);
+  border: 0;            
+  padding: var(--s-3) 0;
+}
+
+/* =========================
+   (2) COMPONENTS - Message
+========================= */
+
+.msgRow {
+  display: grid;
+  grid-template-columns: 60px 1fr; 
+  gap: var(--s-4);                
+  margin: 0 0 var(--s-3);
+  align-items: flex-start;
+}
+
+.msgRow--user {
+  grid-template-columns: 1fr;
+  justify-items: end;
+}
+
+.msgRow--user .msgBody {
+  max-width: min(560px, 92%);
+}
+
+.msgRow--bot .msgBody {
+  max-width: min(560px, 92%);
+}
+
+
+.msgRow--user .imgMsg__grid {
+  grid-template-columns: 1fr; 
+  justify-items: end;   
+}
+
+.msgRow--user .imgMsg__item {
+  margin-left: auto;           
+  margin-right: 0;
+}
+
+
+.msgBody {
+  display: grid;
+  gap: 6px;
+}
+
+/* ✅ 말풍선: 배경 없이 테두리만 */
+.msgBubble {
+  border: 1px solid var(--c-line);
+  color: var(--c-text);
+  padding: var(--s-3);
+  line-height: 1.45;
+  background: transparent; /* ✅ 배경 제거 */
+  border-radius: 0; /* ✅ 둥근거 제거 */
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* user는 살짝 강조: 테두리만 톤 업 */
+.msgRow--user .msgBubble {
+  border-color: var(--c-primary);
+}
+
+.msgTime {
+  font-size: var(--fs-0);
+  color: var(--c-muted);
+  text-align: right;
+}
+
+/* =========================
+   (2) COMPONENTS - Option Bar
+========================= */
+
+.optionBar {
+  margin: var(--s-4) 0 0;
+  padding-top: var(--s-3);
+  border-top: 1px solid var(--c-line);
+}
+
+.optionBar__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+
+/* =========================
+   (2) COMPONENTS - Filters
+========================= */
+
+.filterPanel {
+  margin-top: var(--s-4);
+  padding: var(--s-3);
+  border: 1px solid var(--c-line);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.filterGroup .filterItem .filterItem__text {
+  font-size: var(--fs-2);
+  font-weight: 600;
+  height: 40px;
+  padding: 0 var(--s-4);
+  letter-spacing: -0.01em;
+}
+
+.filterGroup + .filterGroup {
+  margin-top: var(--s-3);
+  padding-top: var(--s-3);
+  border-top: 1px solid var(--c-line);
+}
+
+.filterGroup__title {
+  font-size: var(--fs-1);
+  color: var(--c-text);
+  margin-bottom: var(--s-2);
+  text-align: center;  
+}
+
+.filterGroup__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2) var(--s-3);
+  justify-content: center; 
+}
+
+.filterItem {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  font-size: var(--fs-1);
+  color: var(--c-text);
+  position: relative;
+}
+
+.filterItem__text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  min-width: 90px;
+  height: 36px;
+  padding: 0 var(--s-3);
+  border: 1px solid var(--c-line);
+  background: transparent;
+  font-size: var(--fs-1);
+  color: var(--c-text);
+  cursor: pointer;
+  user-select: none;
+  border-radius: 18px;  
+}
+
+
+.filterItem__check {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.filterItem__check:checked + .filterItem__text {
+  border-color: var(--c-primary);
+  color: var(--c-primary);
+  font-weight: 700;
+
+  background: rgba(61, 61, 61, 0.342); /* ⭐ 이게 제일 중요 */
+}
+
+.filterPanel__send {
+  margin-top: var(--s-3);
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================
+   (2) COMPONENTS - Composer
+========================= */
+
+.composer {
+  margin-top: var(--s-4);
+  padding-top: var(--s-3);
+  border-top: 1px solid var(--c-line);
+
+  display: grid;
+  grid-template-columns: 1fr 90px;
+  gap: var(--s-2);
+  align-items: center;
+}
+
+.composer__input {
+  height: 42px;
+  padding: 0 var(--s-3);
+  border: 1px solid var(--c-line);
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--c-text);
+  font-size: var(--fs-1);
+  outline: none;
+}
+
+.composer__input:focus {
+  border-color: var(--c-primary);
+}
+
+.chatBtn {
+  height: 42px;
+  border: 1px solid var(--c-line);
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--c-text);
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.chatBtn:hover {
+  border-color: var(--c-primary);
+}
+
+/* time_range */
+.composer--time {
+  grid-template-columns: 1fr 90px;
+}
+
+.timeRange {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: var(--s-2);
+  align-items: end;
+}
+
+.timeRange__field {
+  display: grid;
+  gap: 6px;
+}
+
+.timeRange__label {
+  font-size: var(--fs-0);
+  color: var(--c-muted);
+}
+
+.timeRange__select {
+  height: 42px;
+  border: 1px solid var(--c-line);
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0 var(--s-2);
+}
+
+.timeRange__dash {
+  padding: 0 var(--s-1);
+  color: var(--c-muted);
+}
+
+/* image */
+.composer--image {
+  grid-template-columns: 1fr 90px;
+}
+
+.filePick {
+  display: grid;
+  align-items: center;
+  height: 42px;
+  border: 1px dashed var(--c-line);
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 0;
+  cursor: pointer;
+  padding: 0 var(--s-3);
+}
+
+.filePick__input {
+  display: none;
+}
+
+.filePick__text {
+  color: var(--c-text);
+  font-size: var(--fs-1);
+}
+
+/* =========================
+   (2) COMPONENTS - Payload (photos/attributes)
+========================= */
+
+.payloadCard {
+  border: 1px solid var(--c-line);
+  background: rgba(255, 255, 255, 0.2);
+  padding: var(--s-3);
+}
+
+.payloadCard__title {
+  font-size: var(--fs-2);
+  color: var(--c-text);
+  margin-bottom: var(--s-3);
+}
+
+.payloadGallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--s-3);
+}
+
+.payloadGallery__item {
+  display: grid;
+  gap: 8px;
+}
+
+.payloadGallery__label {
+  font-size: var(--fs-1);
+  color: var(--c-muted);
+}
+
+.payloadGallery__img {
+  width: 100%;
+  height: auto;         
+  max-height: 500px;   
+  object-fit: contain;   
+  border: 1px solid var(--c-line);
+  border-radius: 0;
+  cursor: zoom-in;
+  display: block;
+}
+
+.payloadGallery__empty {
+  border: 1px dashed var(--c-line);
+  height: 180px;
+  display: grid;
+  place-items: center;
+  color: var(--c-muted);
+}
+
+/* attribute table */
+.payloadTable {
+  margin-top: var(--s-3);
+  border-top: 1px solid var(--c-line);
+  padding-top: var(--s-3);
+}
+
+.payloadTable__head,
+.payloadTable__row {
+  display: grid;
+  gap: var(--s-2);
+  align-items: center;
+}
+
+.payloadTable__head {
+  font-size: var(--fs-0);
+  color: var(--c-muted);
+  padding-bottom: var(--s-2);
+  border-bottom: 1px solid var(--c-line);
+}
+
+.payloadTable__row {
+  padding: var(--s-2) 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.payloadTable__th,
+.payloadTable__td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.payloadTable__td--label {
+  color: var(--c-text);
+}
+
+/* payload actions */
+.payloadActions {
+  margin-top: var(--s-3);
+  padding-top: var(--s-3);
+  border-top: 1px solid var(--c-line);
+  display: grid;
+  gap: var(--s-2);
+}
+
+.payloadActions__q {
+  color: var(--c-text);
+  font-size: var(--fs-1);
+}
+
+.payloadActions__btns {
+  display: flex;
+  gap: var(--s-2);
+  flex-wrap: wrap;
+}
+
+/* =========================
+   (2) COMPONENTS - Image Message
+========================= */
+
+.imgMsg__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--s-3);
+}
+
+.imgMsg__item {
+  border: 1px solid var(--c-line);
+  background: transparent;
+  padding: var(--s-4);
+  border-radius: 0;
+  text-align: left;
+  cursor: zoom-in;
+}
+
+.imgMsg__name {
+  font-size: var(--fs-0);
+  color: var(--c-muted);
+  margin-bottom: 6px;
+}
+
+.imgMsg__img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;   /* ⬅️ 여기만 키움 */
+  object-fit: contain;
+}
+
+/* =========================
+   (2) COMPONENTS - Lightbox
+========================= */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  z-index: 50;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: var(--s-4);
+}
+
+.lightbox__bar {
+  display: flex;
+  gap: var(--s-2);
+  justify-content: flex-end;
+}
+
+.lightbox__btn {
+  height: 38px;
+  padding: 0 var(--s-3);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: transparent;
+  color: #fff;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.lightbox__btn:hover {
+  border-color: #fff;
+}
+
+.lightbox__stage {
+  display: grid;
+  place-items: center;
+  margin-top: var(--s-3);
+  gap: var(--s-2);
+}
+
+.lightbox__img {
+  max-width: min(980px, 96vw);
+  max-height: 72vh;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 0;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.lightbox__name {
+  color: rgba(255, 255, 255, 0.86);
+  font-size: var(--fs-1);
+}
+
+
+/* =========================
+   Chat - Send Button
+========================= */
+
+.chatBtn {
+  height: 30px;
+  padding: 0 var(--s-4);
+
+  border: 2px solid var(--c-line);
+  background: transparent;
+
+  font-size: var(--fs-1);
+  font-weight: 500;
+  color: var(--c-text);
+
+  border-radius: 0;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatBtn:hover {
+  border-color: var(--c-primary);
+  color: var(--c-primary);
+}
+
+.chatBtn:active {
+  transform: translateY(0.5px);
+}
+
+.msgAvatar {
+  width: 55px;              /* ✅ 아이콘 전체 크기 */
+  height: 55px;
+
+  background-image:  url("../../assets/bot.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; /* ✅ 이미지 원본 비율 유지 */
+
+  background-color: transparent; /* ✅ 흰 배경 제거 */
+  border: none;                   /* ✅ 테두리 제거 */
+
+  display: block;
+}
+

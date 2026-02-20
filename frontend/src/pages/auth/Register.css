@@ -1,0 +1,302 @@
+/* =========================
+   Register Page (Layout Layer + Page-only styles)
+   - 공용 UI 모양은 components.css (ui-input, ui-btn)를 사용
+   ========================= */
+
+.register-page {
+  min-height: 100vh;
+  padding: var(--s-6) var(--s-5);
+}
+
+.register-container {
+  width: 500px;
+  max-width: var(--w-cover);
+  margin: 0 auto;   /* ⭐ 이거 추가 */
+  text-align: center;
+}
+
+/* 제목 + 라인 */
+.register-title {
+  font-size: var(--fs-3);
+  font-weight: 800;
+  margin: 0 0 var(--s-2);
+}
+
+.register-divider {
+  width: 160px;
+  margin: 0 auto var(--s-5);
+}
+
+/* 폼 전체 간격 */
+.register-form {
+  text-align: left;
+}
+
+.register-field-label {
+  display: block;
+  margin: 0 0 6px;
+  font-size: var(--fs-1);
+  font-weight: 600;
+  color: var(--c-text);
+}
+
+.register-form .ui-input {
+  border: 1px solid rgba(43, 61, 26, 0.2);
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+}
+
+.address-row {
+  display: flex;
+  gap: var(--s-2);
+  align-items: center;
+  margin-bottom: var(--s-3);
+}
+
+.address-row .ui-input,
+.address-row .ui-btn {
+  margin: 0;
+}
+
+.address-row .ui-input {
+  flex: 1;
+  min-width: 220px;
+}
+
+.address-search {
+  white-space: nowrap;
+  min-width: 110px;
+}
+
+
+
+/* 프로필 영역 배치 */
+.profile-row {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--s-3);
+  margin-bottom: var(--s-4);
+}
+
+
+
+/* 프로필 이미지 미리보기 박스 (페이지 전용) */
+.profile-preview-box {
+  margin-top: var(--s-4);
+  width: 130px;          
+  height: 130px;
+  background: transparent;   
+  border: 1px solid var(--c-text);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+/* 이미지가 박스 꽉 차게 */
+.profile-preview-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 파일 input 숨김 (버튼 label로 대체) */
+.profile-input {
+  display: none;
+}
+
+/* 프로필 사진 텍스트 숨김 (페이지 전용) */
+.register-form > span {
+  display: none;
+}
+
+/* 프로필 사진 버튼 (페이지 전용) */
+.profile-btn {
+  display: flex;      
+  align-items: center;        
+  justify-content: center;   
+  width: auto;
+  height: 26px;
+  padding: 0 var(--s-2);
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;     
+}
+
+
+/* =========================
+   Terms
+   ========================= */
+
+.register-form form > div:not(.address-row) {
+  margin-top: var(--s-4);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: var(--s-2);
+  padding: var(--s-2) var(--s-3);
+  border: 1px solid var(--c-line);
+  background: rgba(255, 255, 255, 0.55);
+  text-align: left;
+}
+
+.register-form form > div:not(.address-row) + div:not(.address-row) {
+  margin-top: var(--s-2);
+}
+
+.register-form form > div:not(.address-row) label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-2);
+  font-size: var(--fs-2);
+  color: var(--c-text);
+  justify-self: start;
+  text-align: left;
+}
+
+.register-form form > div:not(.address-row) label span {
+  line-height: 1.3;
+}
+
+.register-form form > div:not(.address-row) input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--c-text);
+}
+
+.register-form form > div:not(.address-row) button[type="button"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 26px;
+  padding: 0 var(--s-2);
+  border: 1px solid var(--c-line);
+  background: transparent;
+  color: var(--c-text);
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.register-form form > div:not(.address-row) button[type="button"]:hover {
+  border-color: var(--c-text);
+}
+
+/* =========================
+   Terms Modal
+   ========================= */
+
+.register-container [role="dialog"][aria-modal="true"] {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.45);
+  display: grid;
+  place-items: center;
+  padding: var(--s-4);
+}
+
+.register-container [role="dialog"][aria-modal="true"] > div {
+  width: min(720px, 94vw);
+  max-height: 84vh;
+  background: var(--c-surface);
+  border: 1px solid var(--c-line);
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.register-container [role="dialog"][aria-modal="true"] > div > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--s-3) var(--s-4);
+  border-bottom: 1px solid var(--c-line);
+}
+
+.register-container [role="dialog"][aria-modal="true"] h3 {
+  margin: 0;
+  font-size: var(--fs-3);
+  font-weight: 700;
+  color: var(--c-text);
+}
+
+.register-container [role="dialog"][aria-modal="true"] > div > div:first-child button {
+  height: 30px;
+  padding: 0 var(--s-2);
+  border: 1px solid var(--c-line);
+  background: transparent;
+  color: var(--c-text);
+  cursor: pointer;
+}
+
+.register-container [role="dialog"][aria-modal="true"] > div > div:first-child button:hover {
+  border-color: var(--c-text);
+}
+
+.register-container [role="dialog"][aria-modal="true"] > div > div:last-child {
+  padding: var(--s-3) var(--s-4) var(--s-4);
+  overflow: auto;
+}
+
+.register-container [role="dialog"][aria-modal="true"] p {
+  margin: 0;
+  font-size: var(--fs-2);
+  color: var(--c-text);
+}
+
+.register-container [role="dialog"][aria-modal="true"] .terms-content {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-2);
+  line-height: 1.6;
+  color: var(--c-text);
+  background: var(--c-field);
+  border: 1px solid var(--c-line);
+  padding: var(--s-3) var(--s-3) var(--s-3) 0;
+  text-align: left;
+}
+
+.register-container [role="dialog"][aria-modal="true"] .terms-content h2,
+.register-container [role="dialog"][aria-modal="true"] .terms-content h3,
+.register-container [role="dialog"][aria-modal="true"] .terms-content h4 {
+  margin: 0 0 var(--s-3);
+  font-size: var(--fs-3);
+  font-weight: 700;
+  text-align: center;
+}
+
+.register-container [role="dialog"][aria-modal="true"] .terms-content p {
+  margin: 0 0 var(--s-3);
+  text-align: left;
+}
+
+.register-container [role="dialog"][aria-modal="true"] .terms-content p:last-child {
+  margin-bottom: 0;
+}
+
+.register-container [role="dialog"][aria-modal="true"] .terms-content ul,
+.register-container [role="dialog"][aria-modal="true"] .terms-content ol {
+  margin: 0 0 var(--s-3);
+  padding-left: var(--s-4);
+  text-align: left;
+}
+
+.register-container [role="dialog"][aria-modal="true"] .terms-content li {
+  margin-bottom: var(--s-2);
+}
+
+/* 가입 버튼은 full width 그대로 */
+.register-submit {
+  margin-top: var(--s-5);
+}
+
+/* 에러 메시지 */
+.register-error {
+  margin-top: var(--s-2);
+  font-size: var(--fs-2);
+  color: #c0392b;
+  text-align: center;
+}

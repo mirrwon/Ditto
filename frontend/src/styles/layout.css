@@ -1,0 +1,20 @@
+/* Cover(Splash) 배치 */
+.l-cover {
+  min-height: 100vh;
+  padding: var(--s-6) var(--s-5);
+}
+
+.l-cover-center {
+  width: 100%;
+  max-width: var(--w-cover);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.l-stack-2 { margin-bottom: var(--s-2); }
+.l-stack-5 { margin-bottom: var(--s-5); }
+
+/* 이미지 래퍼 배치 */
+.l-photo-wrap {
+  width: 100%;
+}

@@ -1,0 +1,14 @@
+{
+  "user_num": "2",
+  "user_name": "qwe123",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$9z5HiPGeU6oVghAiBADAOA$s1NONaBe9qi+6QBCl+J5tdP6dwazJY/A+/TfC5JuHMA",
+  "name": "qwe123",
+  "birthDate": "2002-02-22",
+  "phone": "123-1231-2312",
+  "email": "qwe@123",
+  "gender": "male",
+  "zipcode": "06112",
+  "address1": "서울 강남구 논현로123길 4-3",
+  "address2": "qwe123",
+  "created_at": "2026-02-09T06:47:16.365855+00:00"
+}

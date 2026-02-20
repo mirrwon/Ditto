@@ -1,0 +1,77 @@
+{"id": 1, "answers": {"caution": ["baby", "beginner"], "size": ["small"], "style": ["minimal"], "Plant_style": ["leafy"]}}
+{"id": 2, "answers": {"caution": ["beginner", "baby"], "size": ["small"], "style": ["minimal"], "Plant_style": ["leafy"]}}
+{"id": 3, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["minimal"], "Plant_style": ["fruity"]}}
+{"id": 4, "answers": {"caution": ["baby", "beginner"], "size": ["small"], "style": ["minimal"], "Plant_style": ["leafy"]}}
+{"id": 5, "answers": {"caution": ["baby"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 6, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 7, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 8, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 9, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 10, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 11, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 12, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 13, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 14, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 15, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 16, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 17, "answers": {"caution": ["beginner", "allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 18, "answers": {"caution": ["beginner", "allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 19, "answers": {"caution": ["beginner", "allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 20, "answers": {"caution": ["beginner", "allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 21, "answers": {"caution": ["beginner", "allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 22, "answers": {"caution": ["beginner", "allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 23, "answers": {"caution": ["beginner", "allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 24, "answers": {"caution": ["beginner", "allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 25, "answers": {"caution": ["beginner", "allergy"], "size": ["small", "large"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 26, "answers": {"caution": ["beginner", "allergy"], "size": ["small", "large"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 27, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 28, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 29, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 30, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 31, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 32, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["minimal"], "Plant_style": ["leafy"]}}
+{"id": 33, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["minimal"], "Plant_style": ["leafy"]}}
+{"id": 34, "answers": {"caution": ["beginner"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 35, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 36, "answers": {"caution": ["cat"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 37, "answers": {"caution": ["dog"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 38, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 39, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 40, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 41, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 42, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 43, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 44, "answers": {"caution": ["dog"], "size": ["large"], "style": ["minimal"], "Plant_style": ["leafy"]}}
+{"id": 45, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 46, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 47, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 48, "answers": {"caution": ["cat"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 49, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 50, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 51, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 52, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 53, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["minimal"], "Plant_style": ["leafy"]}}
+{"id": 54, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 55, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 56, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 57, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 58, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 59, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 60, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 61, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 62, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 63, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 64, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 65, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 66, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 67, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 68, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 69, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["fruity"]}}
+{"id": 70, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 71, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 72, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy"]}}
+{"id": 73, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 74, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 75, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["leafy", "flowery"]}}
+{"id": 76, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}
+{"id": 77, "answers": {"caution": ["allergy"], "size": ["small"], "style": ["natural"], "Plant_style": ["flowery"]}}

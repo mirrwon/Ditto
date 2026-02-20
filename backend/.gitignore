@@ -1,0 +1,11 @@
+.idea/
+.env
+.env.*
+*.key
+*.secret
+__pycache__/
+*.pyc
+backend/app/models/sam_vit_b.pth
+backend/results/
+backend/results/*.json
+backend/results/result_latest.json

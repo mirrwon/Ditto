@@ -1,0 +1,136 @@
+/* reset (기본) */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+  font-family: var(--font-body);
+  letter-spacing: -0.01em;
+  color: var(--c-text);
+
+  background:
+    linear-gradient(var(--bg-overlay), var(--bg-overlay)),
+    var(--bg-image, var(--c-bg)); /* bg-image 없으면 기본색 */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* 원하면 삭제 가능 */
+}
+
+/* =========================
+   Typography (공용 텍스트 부품)
+   ========================= */
+.typo-title {
+  font-family: var(--font-title);
+  color: var(--c-text);
+}
+
+.typo-body {
+  font-family: var(--font-body);
+  color: var(--c-text);
+}
+
+.typo-muted {
+  color: var(--c-muted);
+}
+
+/* (선택) 제목 크기 부품: 필요하면 조합해서 씀 */
+.typo-xl { font-size: var(--fs-6); }
+.typo-sm { font-size: var(--fs-2); }
+
+/* =========================
+   UI Primitives (공용 부품)
+   ========================= */
+.ui-line {
+  height: var(--bw-line);
+  background: var(--c-text);
+  opacity: 0.75;
+}
+
+.ui-photo {
+  width: 100%;
+  height: var(--h-cover-img);
+  object-fit: cover;
+}
+
+.ui-input {
+  width: 100%;
+  height: 38px;
+  border: none;
+  outline: none;
+  background: var(--c-field);
+  padding: 0 12px;
+  color: var(--c-text);
+  margin-bottom: var(--s-3);
+}
+
+.ui-btn {
+  width: 100%;
+  height: 38px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: var(--s-3);
+}
+
+.ui-btn--compact {
+  width: auto;
+}
+
+.ui-btn-primary {
+  background: var(--c-text);
+  color: var(--c-surface);
+}
+
+.ui-btn-ghost {
+  background: transparent;
+  color: var(--c-text);
+  border: 1px solid var(--c-line);
+}
+
+/* =========================
+   Diary Shared Buttons
+   ========================= */
+.diary-detail-btn,
+.diary-form-btn,
+.diary-new-btn,
+.diary-form__file-btn,
+.diary-list__sort,
+.diary-lightbox__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  background: #f1f0ec;
+  color: var(--c-text, #3E403B);
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: none;
+  transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease, background 120ms ease;
+}
+
+.diary-detail-btn:hover,
+.diary-form-btn:hover,
+.diary-new-btn:hover,
+.diary-form__file-btn:hover,
+.diary-list__sort:hover,
+.diary-lightbox__close:hover {
+  transform: translateY(-1px);
+  border-color: rgba(0, 0, 0, 0.22);
+  background: #e9e6df;
+}
+
+.diary-detail-btn:active,
+.diary-form-btn:active,
+.diary-new-btn:active,
+.diary-form__file-btn:active,
+.diary-list__sort:active,
+.diary-lightbox__close:active {
+  transform: translateY(0);
+}
+
